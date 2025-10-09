@@ -84,9 +84,16 @@ body {
     color: var(--gray-950);
 }
 
-.card main h3 {
+.card main h3 a{
     font: var(--text-preset-1);
-    color: var(--gray-950);
+    /* color: var(--gray-950); */
+    color: var(--yellow);
+    text-decoration: none;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) linear;
+}
+
+.card main h3 a:hover {
+    color: var(--yellow);
 }
 
 .card main p {
