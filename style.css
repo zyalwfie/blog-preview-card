@@ -86,8 +86,7 @@ body {
 
 .card main h3 a{
     font: var(--text-preset-1);
-    /* color: var(--gray-950); */
-    color: var(--yellow);
+    color: var(--gray-950);
     text-decoration: none;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) linear;
 }
