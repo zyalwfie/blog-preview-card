@@ -2,11 +2,13 @@
 
 :root {
     --yellow: #f4d04e;
-    --gray-500: #686868;
+    --gray-500: #6b6b6b;
     --gray-950: #111111;
 
-    --text-preset-1: bold 24px/150%;
-    --text-preset-2: medium 16px/150%;
+    --text-preset-1: bold 24px/150% "Figtree";
+    --text-preset-2: medium 16px/150% "Figtree";
+    --text-preset-3: medium 14px/150% "Figtree";
+    --text-preset-3-bold: bold 14px/150% "Figtree";
 
     --spacing-50: 4px;
     --spacing-100: 8px;
@@ -26,4 +28,83 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--yellow);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    padding: var(--spacing-300);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+    background-color: white;
+    width: 384px;
+    border: 1px solid var(--gray-950);
+    border-radius: 20px;
+    box-shadow: var(--spacing-100) var(--spacing-100) black;
+    margin-inline: var(--spacing-300);
+}
+
+.card header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: var(--spacing-150);
+}
+
+.card main .badge {
+    padding: var(--spacing-50) var(--spacing-150);
+    color: var(--gray-950);
+    background-color: var(--yellow);
+    display: flex;
+    gap: var(--spacing-100);
+    font: var(--text-preset-3-bold);
+    border-radius: var(--spacing-50);
+}
+
+.card main .date {
+    font: var(--text-preset-3);
+    color: var(--gray-950);
+}
+
+.card main h3 {
+    font: var(--text-preset-1);
+    color: var(--gray-950);
+}
+
+.card main p {
+    font: var(--text-preset-2);
+    color: var(--gray-500);
+}
+
+footer .avatar {
+    display: flex;
+    gap: var(--spacing-150);
+    align-items: center;
+}
+
+footer .avatar img {
+    width: 32px;
+    object-fit: cover;
+}
+
+footer .avatar span {
+    font: var(--text-preset-3-bold);
 }
